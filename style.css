@@ -1,0 +1,252 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-family: "montserat", sans-serif;
+	color: #d8dee9;
+}
+
+.top-container {
+	background-image: url(img/bgimg2.jpg);
+	background-size: cover;
+}
+
+.first-container {
+	display: flex;
+	padding: 3rem 0;
+}
+
+.left-box {
+	flex: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2vw;
+}
+
+.right-box {
+	flex: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right-box .side-crd {
+	width: 17%;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px 0 #9c9c9c;
+	transition: all 1s;
+	aspect-ratio: 176 / 313;
+}
+
+.left {
+	background-image: url("img/shigatsumain.jpg");
+	background-size: cover;
+}
+
+.right {
+	background-image: url("img/onepiecemain.jpg");
+	background-size: cover;
+}
+
+.right-box .middle-crd {
+	background-image: url("img/shingekimain.png");
+	width: 26%;
+	height: auto;
+	margin: 0 -1rem;
+	border-radius: 20px;
+	z-index: 1;
+	box-shadow: 0 3px 6px 0 #9c9c9c;
+	transition: all 1s;
+	position: relative;
+	aspect-ratio: 269 / 409;
+	background-size: cover;
+}
+
+.middle-crd:hover {
+	transform: scale(1.1);
+	background-image: url("gif/eren.gif");
+}
+
+.left:hover {
+	transform: scale(1.1);
+	z-index: 2;
+	background-image: url("gif/kaori.gif");
+}
+
+.right:hover {
+	transform: scale(1.1);
+	z-index: 2;
+	background-image: url("gif/luffy2.gif");
+}
+
+.info-container {
+	display: flex;
+	justify-content: space-around;
+	padding: 3rem 3rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1.0));
+}
+
+.info-box {
+	max-width: 20%;
+	padding: 0.3rem 1rem;
+	box-shadow: 0 2px 4px 0 #9c9c9c;
+}
+
+.slide-title {
+	padding: 3.45rem 0;
+	text-align: center;
+	font-size: 1.4rem;
+	background-image: linear-gradient(rgba(0, 0, 0, 1.0),rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+	text-transform: uppercase;
+}
+
+.slide-container {
+	background-image: url("img/bgimg1.jpg");
+	background-size: cover;
+}
+
+.card-container {
+	display: grid;
+	gap: 0.4rem;
+	grid-auto-flow: column;
+	grid-auto-columns: 11%;
+	overflow-x: auto;
+	overscroll-behavior-inline: contain;
+	margin: 3rem 2rem;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.card-element {
+	padding: 0.7rem;
+}
+
+.card-element p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.card-element > img {
+	width: 100%;
+	aspect-ratio: 5 / 8;
+	object-fit: cover;
+	box-shadow: 0 6px 8px 0 black;
+	transition: all 1s;
+}
+
+.card-element > img:hover {
+	transform: scale(1.04);
+}
+
+.snap-inline {
+	scroll-snap-type: inline mandatory;
+}
+
+.snap-inline > * {
+	scroll-snap-align: start;
+}
+
+#black-gap {
+	background-color: black;
+	padding: 0.3rem 0;
+}
+
+.below-scroll {
+	padding: 1rem 0 4rem 0;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1.0),rgba(0, 0, 0, 0.8) , rgba(0, 0, 0, 0.0));
+}
+
+.footer {
+	background-image: url("img/bgimg3.jpg");
+	background-size: cover;
+	text-align: center;
+}
+
+.footer h2 {
+	font-size: 3rem;
+	padding: 7rem 0 0 0;
+	margin: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+}
+
+.footer button {
+	padding: 1.4rem 3.5rem;
+	background-color: rgb(158, 9, 9, 0.4);
+	color: #d8dee9;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 7rem;
+}
+.footer button:hover {
+	background-color: rgb(158, 9, 9, 0.8);
+	cursor: pointer;
+}
+
+#nav-bar {
+	display: flex;
+	justify-content: center;
+	padding: 0 0 2rem 0;
+}
+
+#nav-bar i {
+	font-size: 2rem;
+	color: #d8dee9;
+	padding: 1rem 1rem;
+	transition: all 400ms;
+}
+
+#nav-bar i:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.copy-right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0));
+}
+
+.copy-right i, p {
+	padding: 0.5rem 0.3rem;
+
+}
+
+@media screen and (max-width: 1400px) {
+	
+	.info-container {
+		justify-content: space-between;
+	}
+
+	.info-box {
+		min-width: 30%;
+	}
+
+	.card-container {
+		grid-auto-columns: 18%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	.info-container {
+		flex-direction: column;
+	}
+
+	.info-box {
+		min-width: 100%;
+	}
+
+	.card-container {
+		grid-auto-columns: 22%;
+	}
+}
