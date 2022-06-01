@@ -222,6 +222,10 @@ html, body {
 }
 
 @media screen and (max-width: 1400px) {
+	.left-box {
+		font-size: 1.5rem;
+		padding-left: 1rem;
+	}
 	
 	.info-container {
 		justify-content: space-between;
@@ -237,7 +241,17 @@ html, body {
 }
 
 @media screen and (max-width: 700px) {
+	
+	.first-container {
+		flex-direction: column;
+	}
 
+	.left-box {
+		padding-bottom: 2rem;
+		padding-top: 1rem;
+		font-size: 1rem;
+	}
+	
 	.info-container {
 		flex-direction: column;
 	}
